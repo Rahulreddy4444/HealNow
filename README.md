@@ -1,2 +1,2 @@
-# HealNow
-AI Medical Voice Agent
+# HealNow - AI Medical Voice Agent
+Welcome to the AI-powered medical assistant.
