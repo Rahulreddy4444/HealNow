@@ -3,14 +3,14 @@ Welcome to the AI-powered medical assistant.
 authentication: 
 
 
-npx shadcn@latest add https://ui.aceternity.com/registry/hero-section-demo-1.json
-npm install motion
-npx shadcn@latest add https://ui.aceternity.com/registry/bento-grid.json
-npm i drizzle-orm @neondatabase/serverless dotenv
-npm i -D drizzle-kit tsx
-npx drizzle-kit push
-run local DB : npx drizzle-kit studio
+1.npx shadcn@latest add https://ui.aceternity.com/registry/hero-section-demo-1.json
+2.npm install motion
+3.npx shadcn@latest add https://ui.aceternity.com/registry/bento-grid.json
+4.npm i drizzle-orm @neondatabase/serverless dotenv
+5.npm i -D drizzle-kit tsx
+6.npx drizzle-kit push
+7.run local DB : npx drizzle-kit studio
 
-clerk.com  (also gives subscription feature)
- npm install @clerk/nextjs
- npm i aixos
+8.clerk.com  (also gives subscription feature)
+ 9.npm install @clerk/nextjs
+ 10.npm i aixos
