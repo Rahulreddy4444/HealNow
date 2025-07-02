@@ -21,7 +21,7 @@ import { useRouter } from "next/navigation";
 function NewSession() {
     const [note,setNote] = useState<string>();
     const [loading, setLoading] = useState<boolean>(false);
-    const [suggestedDoctors, setSuggestedDoctors] = useState<Doctor>([]);
+    const [suggestedDoctors, setSuggestedDoctors] = useState<Doctor[]>([]);
     const [selectedDoctor, setSelectedDoctor] = useState<Doctor>();
     const router = useRouter();
     const onClickNext = async () => {
@@ -36,6 +36,7 @@ function NewSession() {
 
     const onStartConversation = async () => {
         setLoading(true);
+        // Save all info to DB
         const result = await axios.post('/api/session-chat',{
             notes: note,
             selectedDoctor: selectedDoctor
@@ -43,6 +44,7 @@ function NewSession() {
         console.log(result.data);
         if(result.data?.sessionId){
             console.log(result.data.sessionId);
+            router.push(`/dashboard/medical-agent/${result.data.sessionId}`);
         }
         setLoading(false);
     }
