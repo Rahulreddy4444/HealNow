@@ -3,7 +3,7 @@ import { IconArrowRight } from '@tabler/icons-react'
 import Image from 'next/image'
 import React from 'react'
 
-type Doctor = {
+export type Doctor = {
     id:number,
     specialist: string,
     image: string,

@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import React, { useState } from 'react'
+import NewSession from './NewSession';
 
 function HistoryList() { 
     const [historyList,sethistoryList] = useState([]);
@@ -13,7 +14,7 @@ function HistoryList() {
                 <Image src={'/medical-assistance.png'} alt='empty' width={200} height={200} />
                 <h2 className='font-bold text-xl mt-2'>No Recent Consultations</h2>
                 <p>It looks like you haven't consulted with any doctor yet.</p>
-                <Button className='mt-3'>+ Start a Consultation</Button>
+                <NewSession />
             </div>:
             <div>List</div>
         }
